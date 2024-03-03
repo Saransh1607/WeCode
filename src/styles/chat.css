@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+.chat-container {
+	background: transparent;
+	display: flex;
+	flex-direction: column;
+	overflow: auto;
+	flex: 1;
+	border-radius: 1rem;
+	justify-content: center;
+}
+
+.chat-header {
+	display: flex;
+	padding: 1%;
+	align-items: center;
+	justify-content: center;
+}
+
+h4 {
+	font-size: 1rem;
+	font-weight: 500;
+}
+
+.chat-messages {
+	display: block;
+	overflow-y: scroll;
+	min-height: 50%;
+}
+
+.Message {
+	padding: 0.2vh 1vw 1.3vh;
+	margin-top: 2vh;
+	margin-left: 0.8vw;
+	margin-right: 0.8vw;
+	margin-bottom: 0.8vw;
+	border-radius: 1%;
+}
+
+.user-message {
+	align-self: flex-end;
+	margin-left: 9%;
+}
+
+.other-message {
+	align-self: flex-start;
+	margin-right: 9%;
+}
+
+.meta {
+	font-weight: bold;
+	opacity: 0.7;
+	margin-bottom: 2vh;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+span {
+	justify-content: space-between;
+}
+
+.chat-form-container {
+	display: flex;
+	flex-direction: column-reverse;
+}
+
+.chat-form {
+	padding: 2%;
+	display: flex;
+	overflow: auto;
+}
+
+.chat-form-container input[type='text'] {
+	padding: 1%;
+	flex: 1;
+}
+
+.Send {
+	cursor: pointer;
+	padding: 0.1rem 2rem;
+	background: lavender;
+	border: 0;
+	border-radius: 0.3rem;
+}
+
+.Send:hover {
+	background-color: rgb(80, 76, 76);
+	
+	box-shadow: 0 3rem 4rem 0 rgba(0,0,0,0.24), 0 4rem 5rem 0 rgba(0,0,0,0.19);
+
+}

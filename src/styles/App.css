@@ -1,0 +1,224 @@
+@import "./chat.css";
+@import "./darkTheme.css";
+@import "./lightTheme.css";
+/* HomePage Styling */
+
+.HomePageWrapper {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+.imageWrapper {
+  align-items: center;
+}
+.formImage {
+  transform: scale(0.7);
+}
+
+.formWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  border-radius: 1rem;
+  max-width: 1000px;
+  min-width: 300px;
+}
+.mainLabel {
+  justify-content: center;
+  display: flex;
+  margin-top: 3%;
+  align-items: center;
+}
+.inputGroup {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 3%;
+  padding-left: 3%;
+  padding-right: 3%;
+}
+.inputBox {
+  margin-bottom: 1%;
+  height: 3vh;
+  min-height: 30px;
+  border-radius: 0.5rem;
+}
+.ButtOn {
+  height: 3vh;
+  min-height: 30px;
+}
+
+.themeWrapper {
+  padding: 1%;
+  justify-content: center;
+  align-items: center;
+}
+
+footer{
+  height: 1vh;
+  display: none;
+}
+
+/* Editor Page Styling */
+.mainWrap{
+  display: grid;
+  height: 100vh;
+}
+
+.bodyWrap{
+  display: grid;
+  flex-wrap: column;
+  grid-template-columns: 18% 52% 30%;
+  overflow: hidden;
+}
+
+.aside{
+  padding: 4%;
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  overflow: auto;
+}
+
+.asideInner{
+  display: flex;
+  height: auto;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+
+.connect {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+
+.clientsList {
+  display: flex;
+  align-items:  center;
+  flex-wrap: wrap;
+  gap: 8%;
+}
+
+.client {
+  display: flex;
+  align-items:  center;
+  flex-direction: column;
+  font-weight: bold;
+}
+
+.userName {
+  margin-bottom: 1rem;
+}
+
+.logo {
+  border-bottom: 1px solid #880505;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.logoImage {
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
+
+.CodeMirror {
+  font-size: 1rem;
+  line-height: 1.4;
+  width: 100%;
+  height: auto;
+  min-height: 98.2vh;
+  max-width: 100%;
+  border-radius: 3mm;
+}
+
+.editorWrap {
+  display: flex;
+  padding: 0.5rem;
+}
+
+.chatWrap {
+  display: flex;
+  flex-direction: column;
+  margin: 0.5vh 0.3vw 0.5vh;
+  border-radius: 1rem;
+  font-size: 0.85rem;
+  overflow: auto;
+  background: transparent;
+}
+
+.buttons{
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1%;
+  margin-left: 1%;
+  opacity: 0.3;
+}
+
+.buttons:hover{
+  opacity: 0.9;
+}
+
+
+.Themebtn, .Copybtn {
+  cursor: pointer;
+  width: 98%;
+  padding: 1% 2%;
+  margin: 1%;
+  font-size: 0.8rem;
+}
+
+.Leavebtn {
+  cursor: pointer;
+  width: 98%;
+  padding: 1% 2%;
+  margin: 1%;
+  font-size: 0.8rem;
+  background-color: rgb(38, 187, 33);
+  
+}
+
+.Leavebtn:hover {
+  background-color: rgb(196, 24, 24);
+  
+}
+
+@media screen and (max-width : 1010px) {
+  .formWrapper {
+    width: 60vw;
+  }
+
+  .chatWrap {
+    font-size: 0.8rem;
+  }
+}
+
+@media screen and (max-width : 800px) {
+  .aside {
+    font-size: 0.8rem;
+  }
+}
+
+@media screen and (max-width : 600px) {
+  .formWrapper {
+    width: 80vw;
+  }
+  .buttons {
+    padding: 0%;
+    margin: 0%;
+    font-size: 0.4rem;
+  }
+}
+
